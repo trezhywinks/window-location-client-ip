@@ -11,7 +11,6 @@ spooky.use(express.static('server'));
 spooky.get(('/server'), (req, res)  => {
 const userIp = req.headers['x-forwarded-for'] || req.ip;
 console.log('[!] UserIP => ', userIp.red.bold);
-//http.get(`http://ipinfo.io/${userIp}/geo`, (resp) => {
 http.get(`http://ip-api.com/json/${userIp}`, (resp) => {
 let data = '';
 
