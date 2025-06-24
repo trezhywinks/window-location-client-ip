@@ -2,8 +2,8 @@ const express = require('express');
 const colors = require('colors');
 const qrcode = require('qrcode-terminal')
 const spooky = express();
-const port = "8080";
-const  host = "http://localhost:8080/"
+const port = "4040";
+const  host = "http://localhost:4040/"
 spooky.use(express.static('server'));
 
 qrcode.generate(host, {small: true}, function (qrcode){
