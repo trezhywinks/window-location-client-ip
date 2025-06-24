@@ -1,3 +1,4 @@
+// npm install .
 const express = require('express');
 const colors = require('colors');
 const http = require('http');
